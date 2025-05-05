@@ -3,23 +3,90 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
-header nav {
-  display: flex;
-  justify-content: space-between;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-header nav ul {
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  gap: 10px;
+:root {
+  --highlight-color: #fd6e0a;
 }
-header nav ul li {
-  list-style: none;
-}
-header nav ul li a {
-  text-decoration: none;
-  padding: 8px 5px;
+header {
+  background-color: rgb(255, 248, 243);
+  background-image: url(../images/developer.png), url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
   text-transform: capitalize;
+  background-size: contain ,  670px; 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+    h5 {
+      font-size: 45px;
+      font-weight: 800;
+      span {
+        color: var(--highlight-color);
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      padding: 8px 5px;
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+  }
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 200px;
+    .banner-content{
+      max-width: 497px;
+      h5{
+        font-weight: 600;
+        font-size: 38px;
+        color: #474747;
+      }
+      .banner-title{
+        font-size: 72px;
+        font-weight: 700;
+        color: #181818;
+      }
+      p{
+        color: rgb(117, 117, 117);
+        font-size: 15px;
+        margin: 20px 0;
+      }
+      button{
+        font-size: 17px;
+        text-transform: capitalize;
+        padding: 16px 14px;
+      }
+    }
+    .banner-img{
+      width: 496px;
+    }
+  }
+}
+.btn {
+  background-color: var(--highlight-color);
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-w{
+  background-color: #fff;
+  color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
 }
