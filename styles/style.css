@@ -16,7 +16,7 @@ header {
   background-repeat: no-repeat;
   background-position: left top, right bottom;
   text-transform: capitalize;
-  background-size: contain ,  670px; 
+  background-size: contain, 670px;
   nav {
     display: flex;
     justify-content: space-between;
@@ -44,35 +44,35 @@ header {
       font-size: 18px;
     }
   }
-  .banner{
+  .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 0 200px;
-    .banner-content{
+    .banner-content {
       max-width: 497px;
-      h5{
+      h5 {
         font-weight: 600;
         font-size: 38px;
         color: #474747;
       }
-      .banner-title{
+      .banner-title {
         font-size: 72px;
         font-weight: 700;
         color: #181818;
       }
-      p{
+      p {
         color: rgb(117, 117, 117);
         font-size: 15px;
         margin: 20px 0;
       }
-      button{
+      button {
         font-size: 17px;
         text-transform: capitalize;
         padding: 16px 14px;
       }
     }
-    .banner-img{
+    .banner-img {
       width: 496px;
     }
   }
@@ -85,8 +85,52 @@ header {
   border: none;
   cursor: pointer;
 }
-.btn-w{
+.btn-w {
   background-color: #fff;
   color: var(--highlight-color);
   border: 1px solid var(--highlight-color);
+}
+/* about me section css */
+
+.about-me {
+  margin: 130px 132px;
+  padding: 110px;
+  border-radius: 10px;
+  background: rgb(255, 248, 243);
+  .about-content {
+    max-width: 970px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #181818;
+    h4 {
+      font-size: 30px;
+      font-weight: 700;
+      color: rgb(24, 24, 24);
+    }
+    > p {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgb(117, 117, 117);
+      line-height: 25px;
+      margin: 25px 0;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .details-item{
+        color: rgb(117, 117, 117);
+        font-size: 17px;
+        p{
+          font-weight: 400;
+          font-size: 15px;
+        }
+        h5{
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
