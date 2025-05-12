@@ -222,3 +222,51 @@ main {
     }
   }
 }
+footer{
+  background-color:rgb(255, 248, 243);
+  .footer-container{
+    padding: 130px 132px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    .footer-content{
+      max-width: 477px;
+      h4{
+        font-size: 30px;
+      }
+      p{
+        color: rgb(71, 71, 71);
+        padding: 20px 0;
+      }
+    }
+    .footer-contact{
+      flex-basis: 560px;
+      font-size: 30px;
+      font-weight: 700;
+      color: rgb(24, 24, 24);
+      h4{
+        margin-bottom: 23px;
+      }
+      .form-control{
+        display: flex;
+        flex-direction: column;
+        width: 75%;        
+        input,textarea{
+          padding: 18px 25px;
+          outline: none;
+          margin-bottom: 20px;
+          border: none;
+        }
+      }
+      button{
+        font-size: 17px;
+        padding: 14px 30px;
+        background-color: var(--highlight-color);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+    }
+  }
+}
